@@ -10,12 +10,10 @@ LXI H, 0000H    ; Load HL pair with the memory address 0000H (target memory loca
 MOV M, D        ; Move the contents of D (final factorial value) to the memory location pointed by HL
 HLT             ; Halt the program
 
-MULT:           ; Multiplication subroutine starts here
-MOVE E, B       ; Move the value of B to register E (store the original value of B)
+MULT:MOVE E, B       ; Move the value of B to register E (store the original value of B)
 MVI A, 00H      ; Load immediate value 00H into accumulator A (initialize accumulator)
 
-LOOP:           ; Multiplication loop starts here
-ADD D           ; Add the value in D (current factorial value) to accumulator A
+LOOP:ADD D           ; Add the value in D (current factorial value) to accumulator A
 DCR E           ; Decrement E (factorial number)
 MOV D, A        ; Move the contents of accumulator A to D (update factorial value)
 RET             ; Return from subroutine
