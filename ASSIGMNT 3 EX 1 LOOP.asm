@@ -1,6 +1,4 @@
-assigmnet 3
-ex 1
-1 TO 5 LOOP
+
 
 MVI A , 01H
 MVI B , 01H

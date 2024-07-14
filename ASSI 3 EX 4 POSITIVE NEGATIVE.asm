@@ -1,7 +1,3 @@
-ASSI 3
-EX 4
-POSITIVE OR NEGATIVE
-
 LXI H, 6000H   ; Load immediate value 6000H into HL register pair
 MOV C, M       ; Move the value at memory location pointed by HL to register C
 MVI B, 00H     ; Move immediate value 00H to register B

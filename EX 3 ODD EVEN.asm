@@ -1,6 +1,3 @@
-EX 3
-ODD OR EVEN
-
 LDA 0000H     ; Load the accumulator with the value from memory location 0000H
 RAR           ; Rotate accumulator right through carry
 JC LOOP       ; Jump to LOOP if carry is set
