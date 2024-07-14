@@ -1,0 +1,13 @@
+assigmnet 3
+ex 1
+1 TO 5 LOOP
+
+MVI A , 01H
+MVI B , 01H
+MVI C , 08H
+LXI D;2201H
+LOOP:STAX D
+INX D
+DCR C
+JNZ LOOP
+HLT
