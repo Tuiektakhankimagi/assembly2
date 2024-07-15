@@ -7,4 +7,4 @@ HLT           ; Halt the program
 
 LOOP: MVI A, 33H  ; Move immediate value 33H to the accumulator
 STA 0002H         ; Store the value of the accumulator at memory location 0002H
-HLT               ; Halt the program
+HLT
